@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Product Collection</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="#" class="logo"></a>
+      <div class="filter-section">
+        <label for="name-filter" class="filter-label">Filter by Name:</label>
+        <input
+          type="text"
+          id="name-filter"
+          class="filter-input"
+          oninput="applyFilters()"
+        />
+
+        <label for="tag-filter" class="filter-label">Filter by Tag:</label>
+        <input
+          type="text"
+          id="tag-filter"
+          class="filter-input"
+          oninput="applyFilters()"
+        />
+      </div>
+    </div>
+
+    <div id="product-list" class="product-list"></div>
+
+    <script src="./index.js" defer></script>
+  </body>
+</html>

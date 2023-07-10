@@ -1,0 +1,79 @@
+/* Styles for header */
+.header {
+  background-color: #f8f8f8;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Styles for product cards */
+.product-list {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  margin: 50px;
+  border-radius: 4px;
+  width: 200px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+  border: 5px dotted rgba(185, 148, 148, 0.451);
+
+  background-color: transparent;
+}
+
+.product-card:hover {
+  transform: scale(1.1);
+}
+
+.product-wrapper {
+  padding: 10px;
+}
+
+.product-title {
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+}
+
+.filter-section {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.filter-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.filter-input {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.has-prescription {
+  background-color: red;
+}
